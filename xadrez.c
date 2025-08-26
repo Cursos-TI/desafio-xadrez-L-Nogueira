@@ -29,8 +29,8 @@ int main() {
     // Inclua o uso de continue e break dentro dos loops.
 
     int mov_bisp = 1;
-    int mov_queen = 1;
     int mov_tower = 1;
+    int mov_queen;
 
     while (mov_bisp <=5)
     {
@@ -39,8 +39,13 @@ int main() {
     }
     
     do {
-        printf("A torre se moveu para a esquerda (%d)", mov_tower);
+        printf("A torre se moveu para a esquerda (%d)\n", mov_tower);
         mov_tower++;
     } while (mov_tower <= 5);
+
+    for (mov_queen = 1; mov_queen <= 8; mov_queen++ ) {
+
+        printf("A rainha se moveu para cima (%d)\n", mov_queen);
+    }
     return 0;
 }
