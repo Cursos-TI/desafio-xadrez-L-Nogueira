@@ -41,6 +41,6 @@ int main() {
     do {
         printf("A torre se moveu para a esquerda (%d)", mov_tower);
         mov_tower++;
-    } wile (mov_tower <= 5);
+    } while (mov_tower <= 5);
     return 0;
 }
