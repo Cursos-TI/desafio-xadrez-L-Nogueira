@@ -37,15 +37,34 @@ int main() {
         printf("O bispo se moveu para cima e para direita (N° de casas: %d)\n", mov_bisp);
         mov_bisp++;
     }
-    
+    printf("\n");
+
     do {
         printf("A torre se moveu para a direita (N° de casas: %d)\n", mov_tower);
         mov_tower++;
     } while (mov_tower <= 5);
+    printf("\n");
 
     for (mov_queen = 1; mov_queen <= 8; mov_queen++ ) {
 
-        printf("A rainha se moveu esquerda (N° de casas: %d)\n", mov_queen);
+        printf("A rainha se moveu para a esquerda (N° de casas: %d)\n", mov_queen);
     }
-    return 0;
+    printf("\n");
+
+    int mov_horse1 = 1;
+    int mov_horse2;
+
+    while (mov_horse1 >= 1 && mov_horse1 <= 2)
+    {
+        printf("O cavalo se moveu para baixo (N° de casas: %d)\n", mov_horse1);
+     
+     for(mov_horse2 = 1; (mov_horse1 == 2) && (mov_horse2 <= 1); mov_horse2++) {
+        printf("O cavalo se moveu para a esquerda (N° de casa: %d)\n", mov_horse2);
+     }
+
+     mov_horse1++;
+    }
+    printf("\n");
+
+return 0;
 }
